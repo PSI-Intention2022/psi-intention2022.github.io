@@ -1,134 +1,199 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
 <head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="description" content="_your description goes here_" />
-<meta name="keywords" content="_your,keywords,goes,here_" />
-<meta name="author" content="_your name goes here_  / Original design: Andreas Viklund - http://andreasviklund.com/" />
-<link rel="stylesheet" type="text/css" href="andreas01.css" media="screen" title="andreas01 (screen)" />
-<link rel="stylesheet" type="text/css" href="print.css" media="print" />
-<style>
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="_your description goes here_" />
+    <meta name="keywords" content="_your,keywords,goes,here_" />
+    <meta name="author"
+        content="_your name goes here_  / Original design: Andreas Viklund - http://andreasviklund.com/" />
+    <link rel="stylesheet" type="text/css" href="andreas01.css" media="screen" title="andreas01 (screen)" />
+    <link rel="stylesheet" type="text/css" href="print.css" media="print" />
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
 
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
 
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-#nav {
-margin: 50px auto;
-height: 40px;
-background-color: #690;
-}         
-#nav ul {
-list-style: none;
-margin-left: 50px;
-}           
-#nav li {
-display: inline;                
-}           
-#nav a {
-line-height: 40px;
-color: #fff;
-text-decoration: none;
-padding: 20px 20px;
-}           
-#nav a:hover {
-background-color: #060;
-}
-</style>
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        #nav {
+            margin: 50px auto;
+            height: 40px;
+            background-color: #690;
+        }
+
+        #nav ul {
+            list-style: none;
+            margin-left: 50px;
+        }
+
+        #nav li {
+            display: inline;
+        }
+
+        #nav a {
+            line-height: 40px;
+            color: #fff;
+            text-decoration: none;
+            padding: 20px 20px;
+        }
+
+        #nav a:hover {
+            background-color: #060;
+        }
+    </style>
 </head>
 
-<body><div id="wrap">
+<body>
+    <div id="wrap">
 
-<!-- <div id="header">
+        <!-- <div id="header">
 </div> -->
 
-<img id="frontphoto" src="bg_header.png" width="760" height="175" alt="" />
+        <img id="frontphoto" src="bg_header.png" width="760" height="175" alt="" />
 
 
-<ul id="nav">
- <li><a href="index.html">Homepage</a></li>
- <li><a href="team.html">Organizer</a></li>
- <li><a href="faq.html">FAQ</a></li>
- </ul>
+        <ul id="nav">
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="team.html">Organizer</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
 
- <div id="content3">
-  <h5>Frequently Asked Questions (FAQ)</h5>
+        <div id="content3">
+            <h5>Frequently Asked Questions (FAQ)</h5>
 
-    <p2>[Q1]: Is there a limit on the team size for participating in the competition?</p2><br>
+            <p2>[Q1]: Is there a limit on the team size for participating in the competition?</p2><br>
 
-    <p2><b>Reply:</b> No, there are no restrictions on the number of members allowed in each team. However, it is important to note that the winners will be recognized and awarded as a team at the conclusion of the competition.</p2><br><br>
+            <p2><b>Reply:</b> No, there are no restrictions on the number of members allowed in each team. However, it
+                is important to note that the winners will be recognized and awarded as a team at the conclusion of the
+                competition.</p2><br><br>
 
-    <p2>[Q2] Can driver prediction tasks use other inputs from the pedestrian intention prediction task (e.g., bounding box information)?</p2><br>
+            <p2>[Q2] Can driver prediction tasks use other inputs from the pedestrian intention prediction task (e.g.,
+                bounding box information)?</p2><br>
 
-    <p2><b>Reply:</b> Yes, you are free to explore any information you believe is useful to address the tasks, either provided in the PSI (e.g., intention) or beyond the PSI dataset (e.g., segment information). However, it is noteworthy that in the test stage, no ground-truth intention will be provided. Thus, one potential strategy is to estimate the intention for the test data and then use the prediction as additional knowledge for other tasks, such as driving decision prediction.</p2><br><br>
+            <p2><b>Reply:</b> Yes, you are free to explore any information you believe is useful to address the tasks,
+                either provided in the PSI (e.g., intention) or beyond the PSI dataset (e.g., segment information).
+                However, it is noteworthy that in the test stage, no ground-truth intention will be provided. Thus, one
+                potential strategy is to estimate the intention for the test data and then use the prediction as
+                additional knowledge for other tasks, such as driving decision prediction.</p2><br><br>
 
-   <p2>[Q3]: Are we constrained to use certain libraries (like tensorflow or pytorch)?</p2><br>
+            <p2>[Q3]: Are we constrained to use certain libraries (like tensorflow or pytorch)?</p2><br>
 
-    <p2><b>Reply:</b> No, we don't constrain participants to use certain libraries. However, TensorFlow and PyTorch would be preferred. Please note that the winners (top 3) will be required to provide the code and detailed guidelines to help us validate and reproduce the results.</p2><br><br>
+            <p2><b>Reply:</b> No, we don't constrain participants to use certain libraries. However, TensorFlow and
+                PyTorch would be preferred. Please note that the winners (top 3) will be required to provide the code
+                and detailed guidelines to help us validate and reproduce the results.</p2><br><br>
 
-   <p2>[Q4]: The ‘main.py’ file does not run because there is inhomogeneous amount of data (‘description’ key in the data). How can we make this description homogenous in terms of dimension?</p2><br>
+            <p2>[Q4]: The ‘main.py’ file does not run because there is inhomogeneous amount of data (‘description’ key
+                in the data). How can we make this description homogenous in terms of dimension?</p2><br>
 
-    <p2><b>Reply:</b> We have verified that the 'main.py' script of the baseline model functions correctly. However, it is important to note that the current baseline model does not incorporate the description data during the training process. To effectively utilize the textual information and ensure compatibility with the existing data dimensions, there are several strategies that can be employed.</p2><br>
+            <p2><b>Reply:</b> We have verified that the 'main.py' script of the baseline model functions correctly.
+                However, it is important to note that the current baseline model does not incorporate the description
+                data during the training process. To effectively utilize the textual information and ensure
+                compatibility with the existing data dimensions, there are several strategies that can be employed.</p2>
+            <br>
 
-    <p2>One potential strategy is to extract text features using a pre-trained language model, such as BERT. By extracting features from the text, you can obtain representations with the same dimensions as the existing data. These extracted features can then be conveniently utilized to optimize your model. We are excitedly looking forward to the exploration of additional promising strategies in this challenge. </p2><br><br>
+            <p2>One potential strategy is to extract text features using a pre-trained language model, such as BERT. By
+                extracting features from the text, you can obtain representations with the same dimensions as the
+                existing data. These extracted features can then be conveniently utilized to optimize your model. We are
+                excitedly looking forward to the exploration of additional promising strategies in this challenge. </p2>
+            <br><br>
 
-   <p2>[Q5]: Regarding CV_Annotations, what is the meaning of "keyframe" attribute inside skeleton?</p2><br>
+            <p2>[Q5]: Regarding CV_Annotations, what is the meaning of "keyframe" attribute inside skeleton?</p2><br>
 
-    <p2><b>Reply:</b> The keyframe attribute is added during the data annotation process but is not necessary when using the data. Please ignore that attribute.</p2><br>
+            <p2><b>Reply:</b> The keyframe attribute is added during the data annotation process but is not necessary
+                when using the data. Please ignore that attribute.</p2><br>
 
-<p2>We have realized that the posture data in the PSI 2 dataset has some issues and we plan to remove it from the competition dataset. All participants are still welcome to detect postures/key points using their algorithms, but ground-truth labels will no longer be provided.</p2><br>
+            <p2>We have realized that the posture data in the PSI 2 dataset has some issues and we plan to remove it
+                from the competition dataset. All participants are still welcome to detect postures/key points using
+                their algorithms, but ground-truth labels will no longer be provided.</p2><br>
 
-<p2>To aid in the possible posture detection task, we have included the PSI 1 dataset as supplemental data in the competition. This dataset contains accurate posture labels for some of the cases. Feel free to use the PSI 1 data as needed to fine-tune any models.</p2><br><br>
+            <p2>To aid in the possible posture detection task, we have included the PSI 1 dataset as supplemental data
+                in the competition. This dataset contains accurate posture labels for some of the cases. Feel free to
+                use the PSI 1 data as needed to fine-tune any models.</p2><br><br>
 
-   <p2>[Q6]: Regarding Cognitive_Annotations, what is the meaning of "selectedTextBbox" attribute?</p2><br>
+            <p2>[Q6]: Regarding Cognitive_Annotations, what is the meaning of "selectedTextBbox" attribute?</p2><br>
 
-    <p2><b>Reply:</b> "selectedTextBbox" contains co-ordinates of bounding box corresponding to noun or pronouns in the text description. As shown in the attached image, all the words marked in “yellow” are linked with the same bounding box. Please note that this bounding box is different from the bounding box in the CV annotation with possibly different sizes, as they are annotated separately. </p2><br>
+            <p2><b>Reply:</b> "selectedTextBbox" contains co-ordinates of bounding box corresponding to noun or pronouns
+                in the text description. As shown in the attached image, all the words marked in “yellow” are linked
+                with the same bounding box. Please note that this bounding box is different from the bounding box in the
+                CV annotation with possibly different sizes, as they are annotated separately. </p2><br>
 
-One example of the object-level mapping:
+            One example of the object-level mapping:
 
-Text Description: He is looking at the opposite side of the road. The “selectedTextBbox” attribute of the phrase “the road” is: "the road._relativeToGoalReasoningText_7": [465.32276330690826, 486.76056338028167, 1079.9546998867497, 621.4889336016097].
+            Text Description: He is looking at the opposite side of the road. The “selectedTextBbox” attribute of the
+            phrase “the road” is: "the road._relativeToGoalReasoningText_7": [465.32276330690826, 486.76056338028167,
+            1079.9546998867497, 621.4889336016097].
 
-The key string has following 3 values based on underscore:
-"the road." : Noun or pronoun.
-"relativeToGoalReasoningText": Text Description containing the noun or pronoun
-"7": Id of the bounding box
+            The key string has following 3 values based on underscore:
+            "the road." : Noun or pronoun.
+            "relativeToGoalReasoningText": Text Description containing the noun or pronoun
+            "7": Id of the bounding box
 
-The remaining is the coordinates of the bounding box. 
-![image](./images/data_granularity_v3.png) <br><br>
-
-
-   <p2>[Q7]: Regarding the evaluation and ground true, our understanding is that we have to create a ground-truth JSON file based on the training and validation sets. However, the annotations provided in the dataset correspond to several annotators (10-11). It means that we have to process all those annotations in order to create a ground-truth that provides a “1” or “0” pedestrian intention per frame. Something similar has to be done with the driver intention.  Does this ground-truth have to be generated using the mean (of all the annotators) or the majority strategy? Please, let us know if we are correctly interpreting how to create the JSON ground-truth.</p2><br>
-
-    <p2><b>Reply:</b> For model training, we encourage participants to explore different strategies to leverage the multiple annotations provided by different annotators. However, for the validation and test data, we will use the majority vote annotation, determined by considering all annotators, as the ground truth to evaluate the submitted predictions. Based on our experience, disagreements among annotators have the potential to benefit model optimization and reduce overfitting.</p2><br><br>
-
-
-   <p2>[Q8]: Test set, we understand that the test set will be released on August 31. We also understand that the test set will provide the video inputs together with the CV and Cognitive annotations (excluding the intentions). Are we interpreting things right?</p2><br>
-
-    <p2><b>Reply:</b> No, in the test data, only the CV annotations will be provided alongside the videos (clips). Cognitive annotations, which are closely linked to intent estimation, are intentionally excluded from the test data to avoid information leakage. This is because some sentences in the cognitive annotations explicitly include the intent, which could compromise the integrity of the evaluation. Additionally, in real-world applications, providing language descriptions at the initial stage is not practical. However, generating or predicting language descriptions based on visual input shows promise as a strategy.</p2><br>
-
-
+            The remaining is the coordinates of the bounding box.
+            ![image](./images/data_granularity_v3.png) <br><br>
 
 
+            <p2>[Q7]: Regarding the evaluation and ground true, our understanding is that we have to create a
+                ground-truth JSON file based on the training and validation sets. However, the annotations provided in
+                the dataset correspond to several annotators (10-11). It means that we have to process all those
+                annotations in order to create a ground-truth that provides a “1” or “0” pedestrian intention per frame.
+                Something similar has to be done with the driver intention. Does this ground-truth have to be generated
+                using the mean (of all the annotators) or the majority strategy? Please, let us know if we are correctly
+                interpreting how to create the JSON ground-truth.</p2><br>
 
-</div>
+            <p2><b>Reply:</b> For model training, we encourage participants to explore different strategies to leverage
+                the multiple annotations provided by different annotators. However, for the validation and test data, we
+                will use the majority vote annotation, determined by considering all annotators, as the ground truth to
+                evaluate the submitted predictions. Based on our experience, disagreements among annotators have the
+                potential to benefit model optimization and reduce overfitting.</p2><br><br>
 
-<div id="footer">
-	<div>
-<font size="2" color="black"> For more information, please visit: <a href='https://github.com/PSI-Intention2022/PSI-Competition'>https://github.com/PSI-Intention2022/PSI-Competition</a><br></font>
-<font size="2" color="black">Contact Email: </font><font size="2" color="blue">psi.intent.benchmark@gmail.com</font>
-</div><br>
-</div>
-</div>
+
+            <p2>[Q8]: Test set, we understand that the test set will be released on August 31. We also understand that
+                the test set will provide the video inputs together with the CV and Cognitive annotations (excluding the
+                intentions). Are we interpreting things right?</p2><br>
+
+            <p2><b>Reply:</b> No, in the test data, only the CV annotations will be provided alongside the videos
+                (clips). Cognitive annotations, which are closely linked to intent estimation, are intentionally
+                excluded from the test data to avoid information leakage. This is because some sentences in the
+                cognitive annotations explicitly include the intent, which could compromise the integrity of the
+                evaluation. Additionally, in real-world applications, providing language descriptions at the initial
+                stage is not practical. However, generating or predicting language descriptions based on visual input
+                shows promise as a strategy.</p2><br><br>
+
+            <p2>[Q9]: what is the meaning of "groudID" attribute inside '*objType*_track_*trackId*' in the CV
+                annotations?</p2><br>
+
+            <p2><b>Reply:</b> We apologize for any confusion or inconvenience caused by this oversight. Regarding your
+                question about the attribute "groupID," it was used solely for the purpose of collecting and organizing
+                raw annotations for intent estimation. Consequently, the "groupID" attribute does not hold any relevance
+                or provide any further information for the competition data processing or any specific tasks. Therefore,
+                you can safely disregard any remaining "groupID" attributes present in the CV annotation files.</p2>
+            <br><br>
+
+
+        </div>
+
+        <div id="footer">
+            <div>
+                <font size="2" color="black"> For more information, please visit: <a
+                        href='https://github.com/PSI-Intention2022/PSI-Competition'>https://github.com/PSI-Intention2022/PSI-Competition</a><br>
+                </font>
+                <font size="2" color="black">Contact Email: </font>
+                <font size="2" color="blue">psi.intent.benchmark@gmail.com</font>
+            </div><br>
+        </div>
+    </div>
 </body>
-</html>
 
+</html>
